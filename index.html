@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Equation Solver</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container w-full h-screen bg-teal-500 flex justify-center
+    items-center">
+      <div class="w-[320px] h-auto py-6 px-3 bg-[rgba(255,255,243,0.7)] rounded-lg">
+        <h2 class="text-teal-900 text-xl text-center tracking-wide mb-4">Quadratic Equation Solver</h2>
+        
+        <div class="flex justify-between w-full">
+          <div class="flex flex-col w-[30%]">
+            <label for="a" class="text-sm">First value [a]</label>
+            <input type="number" name="a" id="a" placeholder="Eg. 3" class="h-10
+            bg-none border border-teal-900 rounded-lg px-2 py-3
+            text-black outline-none focus:border-teal-600 my-3" />
+          </div>
+          <div class="flex flex-col w-[30%]">
+            <label for="b" class="text-sm">second value [b]</label>
+            <input type="number" name="b" id="b" placeholder="Eg. -4" class="h-10 bg-none border border-teal-900 rounded-lg px-2 py-3
+            text-black outline-none focus:border-teal-600 my-3" />
+          </div>
+          <div class="flex flex-col w-[30%]">
+            <label for="c" class="text-sm">Third value [c]</label>
+            <input type="number" name="c" id="c" placeholder="Eg. 27"
+            class="h-10 bg-none border border-teal-900 rounded-lg px-2 py-3
+            text-black outline-none focus:border-teal-600 my-3" />
+          </div>
+        </div>
+        <div class="w-full rounded-lg border border-black h-14 my-3 text-sm
+        text-teal-900 py-3 px-3 hidden" id="result">
+          The root of the equation are -34 snd 43
+        </div>
+        <button class="w-full h-12 px-6 py-2 text-white bg-teal-700 rounded-lg
+        outline-none text-center text-lg hover:opacity-90" id="calc-btn">Calculate</button>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
